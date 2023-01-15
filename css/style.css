@@ -49,6 +49,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
+    gap: 20px;
 }
 
 .main-menu ul {
@@ -159,11 +160,11 @@ header {
     text-align: center;
     color: #fff;
     padding-top: 30px;
-    margin-top:-82px;
-    margin-left:-52px;
+    margin-top: -82px;
+    margin-left: -52px;
     position: relative;
     z-index: 2;
-    
+
 }
 
 .work-expariance h2 {
@@ -171,9 +172,180 @@ header {
     font-size: 65px;
 }
 
-.work-expariance  p {
+.work-expariance p {
     font-weight: 500;
     font-size: 25px;
 }
 
 /* Our features css end */
+
+.feature-products {
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+    width: 1110px;
+    margin: 100px auto;
+}
+
+.feature-products-info h2 {
+    font-weight: 700;
+    font-size: 34px;
+    color: #171717;
+}
+
+.feature-products-info p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #727272;
+    padding: 20px 0px;
+}
+
+/* Feature products CSS end */
+
+.our-facts {
+    margin-top: 130px;
+    margin-bottom: 70px;
+}
+
+.our-facts h2 {
+    font-weight: 700;
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+.our-facts p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    padding-right: 700px;
+}
+
+.facts-items {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.facts-item {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 45px 35px;
+    width: 170px;
+    height: 180;
+    transition:  transform 1s;
+
+}
+.facts-item:hover{
+    transform: scale(1.1);
+    
+}
+.facts-item h3 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+}
+
+.facts-item h5 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+
+/* Our facts css end */
+
+.our-sponsors {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.our-sponsors p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    padding: 20px 0px 50px 0px;
+}
+
+.sponsers-logos {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Sponsers part end */
+
+.footer {
+    height: 100px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 60px 10px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+}
+
+
+/* Mobile responsive css start here */
+
+@media screen and (max-width:576px) {
+    .container, .hero-content, .feature-quick-list, .feature-products, .our-features-banner img{
+        width: 100%;
+    }
+    .title-text {
+        font-size: 36px; 
+    }
+
+    /* Mobile global css end */
+
+    .nav , .main-menu ul {
+  flex-direction: column;
+    }
+    header , main{
+        padding: 0 10px;
+    }
+/* mobile header css end */
+
+    .feature-quick-list , .feature-gallery{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    
+    .our-features{
+        flex-direction: column;
+    }
+
+    .work-expariance{
+        margin: 10px auto 0px;
+        
+    }
+
+    .feature-products{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    /* Features part css end */
+
+    .facts-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-facts p {
+        padding-right: 0px;
+    }
+
+    /* mobile our facts css end */
+    .sponsers-logos .sponser-item img{
+        width: 100%;
+    }
+}
